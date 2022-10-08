@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de bases numéricas</h1>
+
+        <form class="main">
+            <select id="bases" onchange="select(this.value)">
+                <option value="0" selected>SELECIONE A BSAE NUMÉRICA</option>
+                <option value="10">DECIMAL</option>
+                <option value="2">BINÁRIO</option>
+                <option value="8">OCTAL</option>
+                <option value="16">HEXADECIMAL</option>
+            </select>
+
+            <label for="decimal">DECIMAL:</label>
+            <input type="text" id="decimal" disabled>
+
+            <label for="binario">BINÁRIO:</label>
+            <input type="text" id="binario" disabled>
+
+            <label for="octal">OCTAL:</label>
+            <input type="text" id="octal" disabled>
+
+            <label for="hexadecimal">HEXADECIMAL:</label>
+            <input type="text" id="hexadecimal" disabled>
+
+            <button  class="btn" type="button" onclick="converter()">CONVERTER</button>
+        </form>
+    </div>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
